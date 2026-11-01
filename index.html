@@ -7,10 +7,11 @@
     <meta name="description" content="Portfolio of Jigar Vachhani — Creative Designer, AI Content Creator, Video Editor, and UI/UX Designer turning ideas into extraordinary digital experiences." />
     <meta name="keywords" content="Jigar Vachhani, Creative Designer, AI Content Creator, Video Editor, UI/UX Designer, Portfolio, Motion Graphics, Three.js" />
     <meta name="author" content="Jigar Vachhani" />
+    <link rel="canonical" href="https://jigarvachhani.design/portfolio" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jigarvachhani.design/" />
+    <meta property="og:url" content="https://jigarvachhani.design/portfolio" />
     <meta property="og:title" content="Jigar Vachhani — Creative Designer & AI Content Creator" />
     <meta property="og:description" content="Turning ideas into extraordinary digital experiences through design, storytelling, and AI." />
     <meta property="og:image" content="/og-preview.png" />
@@ -28,10 +29,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@500;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      if (window.location.pathname === '/') {
+        window.location.replace('/portfolio' + window.location.search + window.location.hash);
+      }
+    </script>
   </head>
   <body class="bg-charcoal-950 text-slate-100 antialiased selection:bg-neon-lime selection:text-black overflow-x-hidden">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
